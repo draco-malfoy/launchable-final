@@ -23,7 +23,7 @@ jobs:
  
     - name: Build and Test
       working-directory: ./
-      run: |
+      run: | 
         BUILD_NAME=${GITHUB_RUN_ID:=local-$(date +%s)}
         pip3 install --user launchable~=1.0 > /dev/null
         export PATH=~/.local/bin:$PATH
