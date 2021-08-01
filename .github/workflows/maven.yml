@@ -29,10 +29,10 @@ jobs:
         export PATH=~/.local/bin:$PATH
         launchable verify
         launchable record build --name "$BUILD_NAME" --source .
-		mvn surefire-report:report
+        mvn surefire-report:report
         launchable subset --target 25% --build "$BUILD_NAME" maven src/test/java/testLaunchable/ > subset.txt
         cat subset.txt
-		mvn test -Dsurefire.includeFiles=subset.txt
+        mvn test -Dsurefire.includeFiles=subset.txt
         function record() {
           launchable record tests --build "$BUILD_NAME" maven target/surefire-reports/
         }
