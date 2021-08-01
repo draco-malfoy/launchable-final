@@ -10,7 +10,7 @@ public class Subtract {
 	
 	@Test
 	 void testSubtract() {
-		Assertions.assertEquals(5, MainDemo.subtract(a, b));
+		Assertions.assertEquals(11, MainDemo.subtract(a, b));
 	}
 
 }
