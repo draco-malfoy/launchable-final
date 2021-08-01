@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-
+ 
     - name: Build and Test
       working-directory: ./
       run: |
@@ -28,7 +28,7 @@ jobs:
         pip3 install --user launchable~=1.0 > /dev/null
         export PATH=~/.local/bin:$PATH
         launchable verify
-        launchable record build --name "$BUILD_NAME" --source ..
+        launchable record build --name "$BUILD_NAME" --source .
         launchable subset --target 25% --build "$BUILD_NAME" gradle src/test/java > subset.txt
         cat subset.txt
         function record() {
