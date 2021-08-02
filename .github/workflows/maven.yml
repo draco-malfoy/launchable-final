@@ -30,7 +30,7 @@ jobs:
         launchable verify
         launchable record build --name "$BUILD_NAME" --source .
         mvn surefire-report:report
-        launchable subset --target 50% --build "$BUILD_NAME" maven src/test/java/testLaunchable/ > subset.txt
+        launchable subset --target 100% --build "$BUILD_NAME" maven src/test/java/testLaunchable/ > subset.txt
         echo "THESE TESTS WILL RUN... ONLY"
         cat subset.txt
         mvn test -Dsurefire.includeFiles=subset.txt
