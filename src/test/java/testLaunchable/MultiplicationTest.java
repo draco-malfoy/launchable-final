@@ -3,14 +3,13 @@ package testLaunchable;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Division {
+public class MultiplicationTest {
 
 	static int a = 10, b = 5;
 
-
 	@Test
-	 void testDivision() {
-		Assertions.assertEquals(6, MainDemo.division(a, b));
+	 void testMultiplication() {
+		Assertions.assertEquals(5, MainDemo.multiplication(a, b));
 	}
 
 

@@ -3,7 +3,7 @@ package testLaunchable;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Power {
+public class PowerTest {
 
 	static int a = 10, b = 5;
 

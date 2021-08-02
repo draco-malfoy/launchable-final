@@ -3,14 +3,14 @@ package testLaunchable;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class Sum {
+public class SubtractTest {
 
 	static int a = 10, b = 5;
 
+	
 	@Test
-	 void testAdd() {
-		Assertions.assertEquals(15, MainDemo.sum(a, b));
+	 void testSubtract() {
+		Assertions.assertEquals(11, MainDemo.subtract(a, b));
 	}
-
 
 }
