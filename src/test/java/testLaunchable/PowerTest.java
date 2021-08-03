@@ -10,7 +10,7 @@ public class PowerTest {
 	
 	@Test
 	 void testPower() {
-		Assertions.assertEquals(100000, MainDemo.power(a, b));
+		Assertions.assertEquals(10000, MainDemo.power(a, b));
 	}
 
 }
