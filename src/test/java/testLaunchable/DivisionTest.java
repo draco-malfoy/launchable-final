@@ -10,7 +10,7 @@ public class DivisionTest {
 
 	@Test
 	 void testDivision() {
-		Assertions.assertEquals(2, MainDemo.division(a, b));
+		Assertions.assertEquals(3, MainDemo.division(a, b));
 	}
 
 
