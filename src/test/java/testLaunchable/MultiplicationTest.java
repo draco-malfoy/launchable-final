@@ -9,7 +9,7 @@ public class MultiplicationTest {
 
 	@Test
 	 void testMultiplication() {
-		Assertions.assertEquals(5, MainDemo.multiplication(a, b));
+		Assertions.assertEquals(50, MainDemo.multiplication(a, b));
 	}
 
 
